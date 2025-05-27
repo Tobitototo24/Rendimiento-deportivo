@@ -93,6 +93,11 @@ def elegir_distancia():
 
 
 def elegir_edades():
+    # categorias
+    # "Sub-20": de los 14 a 19
+    # "Sub-30": de los 20 a 29
+    # "Sub-40": de los 30 a 39
+    # "Mayores de 40": de 40 a 60
     while True:
         mostrar_categoria()
         op = int(input("Ingresá la categoria (ej: 1): "))
