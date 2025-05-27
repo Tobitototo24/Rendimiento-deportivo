@@ -10,7 +10,7 @@ def mostrar_menu():
     print("8. Mostrar peor marca")
     print("9. Mostrar mejor marca por categoria")
     print("10. Salir")
-    
+
 
 def mostrar_deportes():
     print("\n=== Deportes ===")
@@ -105,9 +105,9 @@ def elegir_edades():
         elif op == 3:
             par_edad = [30, 39]
             break
-        elif op == 3:
+        elif op == 4:
             par_edad = [40, 60]
             break
         else:
             print("error, categoria no disponible")
-        return par_edad
+    return par_edad
