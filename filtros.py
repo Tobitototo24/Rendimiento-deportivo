@@ -19,7 +19,7 @@ def mejores_que(lista, deporte, distancia, valor):
 
 
 def filtrar_por_edad(lista, deporte, edad_min, edad_max):
-    # sublista de participantes que esten entre ciertas edades, por ejemplo entre 25 y 30 años, 
+    # sublista de participantes que esten entre ciertas edades, por ejemplo entre las categorias creadas en utils.py elegir_edades()
     # Mauricio
     pass
 
