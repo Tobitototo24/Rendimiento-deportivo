@@ -14,13 +14,13 @@ def filtrar_por_distancia(lista, deporte, distancia):
 
 def mejores_que(lista, deporte, distancia, valor):
     # Se debe devolver una sublista con las mejores marcas a partir de cierto valor, por ejemplo marca < 10.00 (mejor marca), a su vez se puede crear una funcion nueva que mustre la mejor marca por deporte
-    # Octavio
+    # Franco
     pass
 
 
 def filtrar_por_edad(lista, deporte, edad_min, edad_max):
     # sublista de participantes que esten entre ciertas edades, por ejemplo entre las categorias creadas en utils.py elegir_edades()
-    # Mauricio
+    # Tobias
     pass
 
 

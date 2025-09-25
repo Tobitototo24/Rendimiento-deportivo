@@ -8,7 +8,7 @@ def calcular_promedio(lista, deporte, distancia):
 
 def calcular_mejor_marca(lista, deporte, distancia):
     # Encuentra la mejor marca entre todos los participantes que compiten en el deporte
-    # Octavio
+    # FRanco Quispe
     pass
 
 
@@ -27,7 +27,7 @@ def mejor_marca_por_categoria(lista, deporte, distancia):
     # paso 3: Buscar la mejor marca por categoría: guardar los ganadores en el dic ej: categorias["Sub-20"].append(atleta)
     # paso 3.5: recordar que si no hay un atleta en la categoria mejores[categoria] = None
     # usar la funcion elegir_edades() que esta en el archivo utils si fuese necesario
-    # Mauricio
+    # Tobias
     pass
 
 
