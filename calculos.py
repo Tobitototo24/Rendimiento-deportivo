@@ -19,6 +19,34 @@ def calcular_peor_marca(lista, deporte, distancia):
 
 
 def mejor_marca_por_categoria(lista, deporte, distancia):
+  #diccionarios con las categorias
+    categorias = {
+        "Sub-20": None,
+        "Sub-30": None,
+        "Sub-40": None,
+        "Mayores de 40": None
+    }
+
+    rangos = {
+        "Sub-20": (14, 19),
+        "Sub-30": (20, 29),
+        "Sub-40": (30, 39),
+        "Mayores de 40": (40, 60)
+    }
+#esto filtra a los atletas por el deporte y la distancia usando el "filtrar_por_edad"
+    for categoria, (edad_min, edad_max) in rangos.items():
+        sublista = filtrar_por_edad(lista, deporte, edad_min, edad_max)
+        sublista = [p for p in sublista if p["distancia"] == distancia]
+
+        if sublista: 
+            mejor = min(sublista, key=lambda x: x["marca"])
+            categorias[categoria] = mejor
+        else:
+            categorias[categoria] = None
+
+    return categorias
+#aca se guardan los ganadores por categoria
+        
     # funcion que muestra las mejores marcas por categoria y distancia:
     # la idea es usar el fritro filtrar_por_edad() luego usar condicionales y guardar en un diccionario los datos {categoria, atleta}
     # Ejemplo:
