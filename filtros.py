@@ -19,9 +19,11 @@ def mejores_que(lista, deporte, distancia, valor):
 
 
 def filtrar_por_edad(lista, deporte, edad_min, edad_max):
-    # sublista de participantes que esten entre ciertas edades, por ejemplo entre las categorias creadas en utils.py elegir_edades()
-    # Tobias
-    pass
+    sublista = [
+        p for p in lista
+        if p["deporte"] == deporte and edad_min <= p["edad"] <= edad_max 
+    ]
+    return sublista
 
 
 def filtrar_1(lista):
